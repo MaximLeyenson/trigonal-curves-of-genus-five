@@ -23,7 +23,7 @@ Email any suggestions to the <leyenson -at- gmail -dot- com\>, please
 
  [constructing a random nodal plane curve C' of degree 5 ..]
  [computing the canonical model of C', i.e., the image under the linear system |2l - p|]
- [constructing the map $`f: C \mapsto P^4`$, or $`\phi:  T <- S`$ ] 
+ [constructing the map $`f: C \mapsto P^4`$, or $`\phi:  T \leftarrow S`$ ] 
  [computing kernel of the map phi: $`k[P^4] -> k[C]`$ ] 
  [that is, the equations of the canonical model of C ] 
  [computed IdealC, the ideal of the canonical model of C] 
