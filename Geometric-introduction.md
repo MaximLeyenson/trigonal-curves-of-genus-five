@@ -18,10 +18,10 @@ Email any suggestions and improvements to <leyenson@google mail server dot com>,
 1. Let C be [non-hyperelliptic] trigonal  curve of genus five (assume for a moment that it
 exists). Then it has a plane model C' which is a quintic with a double point.
 
-Indeed, let $g_3^1 = |p + q + r|$, where the points p, q and r on C are distinct.
+Indeed, let $`g_3^1 = |p + q + r|`$, where the points p, q and r on C are distinct.
 Then, by the geometric Riemann-Roch theorem, the points p, q and r 
 all belong to the same line l in the canonical embedding of C. (When we vary the divisor
-$D = p + q + r$ in the linear system $g_3^1$, the span $<D\>$ varies, too, forming a ruled surface
+$D = p + q + r$ in the linear system $`g_3^1`$, the span $<D\>$ varies, too, forming a ruled surface
 in $P^4$ containing C. More on this in a moment.)
   
 In the canonical embedding of C the linear system of hyperplanes
