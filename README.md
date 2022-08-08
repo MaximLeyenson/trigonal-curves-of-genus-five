@@ -1,23 +1,22 @@
-# trigonal-curves-of-genus-5
+# Trigonal curves of genus 5, canonical model
 
-   <!-- Required extensions: mdx_math(enable_dollar_delimiter=1)  -->
-
- [Geometric introduction](Geometric-introduction.md)
 
 **Subject**
 
 Projective algebraic geometry
 
+**Geometric introduction**
+For a Geometric introduction, please see [Geometric introduction](Geometric-introduction.md)
+
 **Synopsis**
 
-Construct a [random] canonically embedded trigonal curve of genus 5 in
-its canonical projective embedding.
+Construct a random canonically embedded trigonal curve of genus five in $`\mathbb{P}^4`$.
 
 I am merely using the ideas of David Eisenbud, who was testing Mark
-Green's conjecture on curve gonality for curves of genus 7 (I
+Green's conjecture on the gonality and projective resolutions of curves.
 believe). There are no new ideas involved.  
 
-Email any suggestions to the <leyenson -at- gmail -dot- com\>, please
+Email any suggestions to the ![email address](images/email-address-image.resample-150.gif), please
 
 **Typical output, abridged**
 
