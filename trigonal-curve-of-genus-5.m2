@@ -1,13 +1,12 @@
 
--- here i am merely using the ideas of David Eisenbud, who was testing
--- Mark Green conjecture on the gonality of curves. there are no new ideas
--- involved. Maxim
+-- here i am using ideas of David Eisenbud, who was testing
+-- Mark Greens conjecture on the minimal resolutions of canonical curves.
 
 ---------------------------------------------------------------------
 
 -- starting with P^2
 
- kk = ZZ/13            -- characteristics should not be 2 or 5 
+ kk = ZZ/13            -- characteristics should not be 2 or 5  (degree of the curve)
 
  R = kk[a,b,c]
 
@@ -19,16 +18,16 @@
 
 -- C is the resolution of singularities
 
--- (Macaulay does not deal with notations like C^prime well, hence I use Gamma)
+-- (Macaulay does not deal with notations like C^prime well, hence I have to use Gamma)
 
-
+-- ----------------------------------------------------------------------------------
 -- need  a quintic with one node.
 
   m = ideal(a,b)
 
       -- point p = (0,0,1)
 
- -- For a plane curve Gamma to have a node at the point p, we should have f is in the ideal m^2:
+ -- For a plane curve Gamma to have a node at the point p, we should have f to be in the ideal m^2:
 
 curves = m^2
 
@@ -70,10 +69,10 @@ print " "
 print f
 print " "
 print "need to check that it has a node at the point p (and not some higher singularity), "
-print "and that it has no singularities at any other points "
+print "and that it has no singularities at other points "
 
 -- ---------------------------------------------------------------------
-print " [sanity check: if we are unlucky, f can land in  m^3! ] "
+print " [check: if we are unlucky, f can land in  m^3! ] "
 -- ---------------------------------------------------------------------
 
 if (f % m^3) == 0 
@@ -82,8 +81,8 @@ if (f % m^3) == 0
 
 
 -- ---------------------------------------------------------------------
-print " [sanity check: if we are unlucky, quadratic part of f at p could be degenerate; ] "
-print " [that is, the tangent cone will be the double line ] "
+print " [check: if we are unlucky, the quadratic part of f at the point p could be degenerate; ] "
+print " [that is, the tangent cone will be a double line ] "
 
 quadraticPart = f % m^3
        -- it is still homogeneous; need an affine part; c -> 1
@@ -110,7 +109,7 @@ if (Discr == 0 )                    -- Discriminant is zero
    print "  -> [OK; lucky; point p is just a node ] " ;
 
 -- ---------------------------------------------------------------------
--- sanity check: need to check that there are no other singularities!
+-- check: need to check that there are no other singularities!
 -- that would be incredibly unlucky
 -- ---------------------------------------------------------------------
 
@@ -234,7 +233,7 @@ numberOfGens= # IdealC
 print numberOfGens
 
 
--- 5 образующих; 3 квадрики; 2е кубики
+-- 5 generattors; 3 quadrics; 2 cubics
 
 print " [degrees of the generators of the IdealC: ]"
 
@@ -243,14 +242,12 @@ for i from 0 to numberOfGens - 1 do (
           )
 
 
-
-print " [the generators of the IdealC: ]"
+print " [the generators of the Ideal of C: ]"
 
 for i from 0 to numberOfGens - 1 do (
 	  print IdealC_i;
           print " "
           )
 
--- error "debug me"
 
 

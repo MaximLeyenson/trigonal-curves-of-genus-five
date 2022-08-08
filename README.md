@@ -10,6 +10,8 @@ Projective algebraic geometry
 For a Geometric introduction to genus five trigonal curves, please see
 [Geometric introduction](Geometric-introduction.md)
 
+(Also, the Macaulay 2 code is really commented and explained).
+
 **Synopsis**
 
 Construct a random canonically embedded trigonal curve of genus five in $`\mathbb{P}^4`$.
