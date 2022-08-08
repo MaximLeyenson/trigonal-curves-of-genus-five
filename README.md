@@ -21,7 +21,7 @@ For a Geometric introduction to genus five trigonal curves, please see
 
 Construct a random canonically embedded trigonal curve of genus five in $`\mathbb{P}^4`$.
 
-I am merely using the ideas of David Eisenbud, who was testing Mark
+I am using some ideas of David Eisenbud, who was testing Mark
 Green's conjecture on the gonality and projective resolutions of curves.
 believe). There are no new ideas involved.  
 
