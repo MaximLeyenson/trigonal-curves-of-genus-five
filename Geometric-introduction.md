@@ -47,7 +47,7 @@ Geometry of Algebraic Curves: Volume I, Appendix A), after removing the base poi
 we get the _canonical_ linear system on $`C`$. (For any plane nodal curve $C'$,
 the canonical class of its smooth model is $` (d-3) l - \{ `$ 0-cycle of nodes on  $`C' \} `$.)
 
-Note that the linear system $`|2l - p|`$ embeds $`Bl_p(P^2)`$ as a ruled surface in
+Note that the linear system $`|2l - p|`$ embeds $`\mathop{\rm Bl}}_p(\mathbb{P}^2)`$ as a ruled surface in
 $`\mathbb{P}^4`$.
 
 This gives an embedding
