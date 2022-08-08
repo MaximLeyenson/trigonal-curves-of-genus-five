@@ -22,8 +22,7 @@ For a Geometric introduction to genus five trigonal curves, please see
 Construct a random canonically embedded trigonal curve of genus five in $`\mathbb{P}^4`$.
 
 I am using some ideas of David Eisenbud, who was testing Mark
-Green's conjecture on the gonality and projective resolutions of curves.
-believe). There are no new ideas involved.  
+Green's conjecture on minimal resolutions of canonical curves.
 
 Email any suggestions to the ![email address](images/email-address-image.resample-100.gif), please
 
