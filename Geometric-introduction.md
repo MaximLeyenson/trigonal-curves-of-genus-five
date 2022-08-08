@@ -74,11 +74,11 @@ This gives an embedding
 
 where i is givenby the linear system |2l - p|.
 
-4. note that any line $l_0$ on P^2 via p becomes a line under the embedding
-i(). (It followa, or example, from the computation C \dot l_0 = p + p' for
+4. note that any line $`l_0`$ on $`P^2`$ via p becomes a line under the embedding
+i(). (It followa, or example, from the computation $`C \cdot l_0 = p + p'`$ for
 any conic C in |2l - p|.
 
-It follows that the image S = Bl(P^2) in P^4  is a ruled surface, with every line 
+It follows that the image $`S = Bl(P^2)`$ in $`P^4`$  is a ruled surface, with every line 
 of the ruling giving a trisecan to the i(C). Thus, S is the spanned by the trisecant lines
 to C.
 
