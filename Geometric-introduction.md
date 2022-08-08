@@ -12,7 +12,7 @@ in $`P^4`$ containing $`C`$. More on this in a moment; this surface is important
   
 Now consider the linear system of hyperplanes $`|H|`$ in $`\mathbb{P}^4`$ and the linear subsystem
 $`|H - l|`$ of hyperplanes containing the line $`l`$. It cuts out a linear system  
-$`|K_C - p - q - r`$ of dimension $`4 - (dim l + 1) = 2`$ and degree 8 - 3 = 5 on $`C`$:
+$`|K_C - p - q - r| `$ of dimension $`4 - ( \dim l + 1) = 2`$ and degree 8 - 3 = 5 on $`C`$:
 
 ```math
     K_C - g_3^1 = g_5^2
