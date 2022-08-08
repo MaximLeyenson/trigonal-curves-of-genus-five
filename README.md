@@ -19,19 +19,14 @@ believe). There are no new ideas involved.
 
 Email any suggestions to the <leyenson -at- gmail -dot- com\>, please
 
-**Typical output, preview**
+**Typical output, abridged**
 
-
- [computed a random nodal plane curve of degree 5, 
- [computed the canonical map on the resolution C, i.e., |2l - p|;  canonicalSeries = 
-
- constructing \( P^4 \) with coordinates $x_i$ 
- 
- [constructing the map f: C -> P^4, or phi:  T <- S ] 
- [computing kernel of the map phi: k[P^4] -> k[C] ] 
+ [constructing a random nodal plane curve C' of degree 5 ..]
+ [computing the canonical model of C', i.e., the image under the linear system |2l - p|]
+ [constructing the map $`f: C \mapsto P^4`$, or $`\phi:  T <- S`$ ] 
+ [computing kernel of the map phi: $`k[P^4] -> k[C]`$ ] 
  [that is, the equations of the canonical model of C ] 
- 
- [computed IdealC, ideal of the canonical model of C] 
+ [computed IdealC, the ideal of the canonical model of C] 
  
  [degrees of the generators of the IdealC: ]
 
@@ -41,34 +36,40 @@ Email any suggestions to the <leyenson -at- gmail -dot- com\>, please
 {3}
 {3}
 
+**Full output with equations, example**
 
-**Synopsis**
+ [Full output, example](output-example.txt)
 
 **Usage**
 
-Simplest usage:
 
 ```bash
-$ (command)
+$ M2 trigonal-curve-of-genus-5.m2
 ```
-
-DO x y z
-
 
 **Requirements**
 
-   * python3-alsaaudio
+   * M2:  [Macaulay2](https://en.wikipedia.org/wiki/Macaulay2) is a free computer algebra system created by Daniel Grayson 
+and Michael Stillman for computation in algebraic geometry
 
 
-**Installation **
+**Installation**
+
 ```bash
-   $ mkdir -pv ~/bin
-   $ cd ~/bin/
-   $ git clone https://gitlab.com/maxim.leyenson/alarm-clock
+   $ git clone https://gitlab.com/maxim.leyenson/trigonal-curves-of-genus-five
 ```
+
+**Installation of Macaulay 2 in Ubuntu / Linux Mint**
+```bash
+        sudo add-apt-repository ppa:macaulay2/macaulay2
+        sudo apt-get update
+        sudo apt install macaulay2
+```
+
 
 **Attributions**
 
- Maxim Leyenson
- 
- <leyenson@google mail dot com>
+Maxim Leyenson, <leyenson@google mail dot com>
+
+Using a number of ideas of David Eisenbud
+
