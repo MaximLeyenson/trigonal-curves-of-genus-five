@@ -1,3 +1,4 @@
+# trigonal-curves-of-genus-5: Geometric introduction.
 
    <!-- Required extensions: mdx_math(enable_dollar_delimiter=1)  -->
 
@@ -111,3 +112,4 @@ geometric meaning:
     |K_C - g_3^1 | = {divisors in K_C, containing 3 points on a line} - {the base locus} = g_5^2  END.
 
 ---------------------------------------------------------------------- 
+ [Go back to README](README.md)
