@@ -12,6 +12,11 @@ For a Geometric introduction to genus five trigonal curves, please see
 
 (Also, the Macaulay 2 code is really commented and explained).
 
+**Programming language**
+
+[Macaulay2](https://en.wikipedia.org/wiki/Macaulay2) 
+
+
 **Synopsis**
 
 Construct a random canonically embedded trigonal curve of genus five in $`\mathbb{P}^4`$.
@@ -72,3 +77,8 @@ Maxim Leyenson, ![email address](images/email-address-image.resample-100.gif)
 Using ideas of David Eisenbud, in his study of the Mark Green conjectures on minimal resolutions of canonical curves.
 
 
+**License**
+
+This code is distributed under the BSD 4-Clause "Original" or "Old" License,
+see the [LICENSE](BSD-4-Clause.pandoc.md) file. (That is, mention my name somewhere when you are forking the
+code. I am looking for a job!)
