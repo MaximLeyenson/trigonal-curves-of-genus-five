@@ -1,0 +1,8 @@
+
+add 'LICENSE' file
+mention the license explicitely
+
+remove comments '<!-- --> in README
+
+make repository public
+
