@@ -34,8 +34,8 @@ trisecant line l is of dimension 4 - 2 = 2 and degree 8 - 3 = 5:
     K_C - g_3^1 = g_5^2
 ```
 
-This g_5^2 gives a plane model C' of the curve C which is a curve of degree 5.
-Since p_a(C') = 4 * 3 / 2 = 6, we have $`delta(C') = p_a(C') - p_g(C') = 
+This $`g_5^2`$ gives a plane model C' of the curve C which is a curve of degree 5.
+Since p_a(C') = 4 * 3 / 2 = 6, we have $` \delta(C') = p_a(C') - p_g(C') = 
 6 - 5 = 1`$, and thus C' contains either one node or one cusp.
 
 ---------------------------------------------------------------------
@@ -51,10 +51,10 @@ It is immediately clear that C is trigonal: the linear system of lines
 on the plane through p, |l - p|, gives a pencil of [effective] divisors
 of degree 3 on C.
 
-     <!--
+     TO EDIT:
 Since C' has a node at the point p, the curve C is naturally embedded into the
 blowup, 
-    -->
+   END
 
 ---------------------------------------------------------------------- 
 3. The linears system of conics through p on the plane, |2 l - p|,
@@ -75,7 +75,7 @@ This gives an embedding
 where i is givenby the linear system |2l - p|.
 
 4. note that any line $`l_0`$ on $`P^2`$ via p becomes a line under the embedding
-i(). (It followa, or example, from the computation $`C \cdot l_0 = p + p'`$ for
+i(). (It follows, or example, from the computation $`C \cdot l_0 = p + p'`$ for
 any conic C in |2l - p|.
 
 It follows that the image $`S = Bl(P^2)`$ in $`P^4`$  is a ruled surface, with every line 
@@ -101,13 +101,13 @@ by its own pencil of cubic hypersurfaces in P^4. The attached program computes t
 
 ---------------------------------------------------------------------- 
 
-     <!-- need one node.
+ TO EDIT: need one node.
 
 K_C - g_3^1:
       deg = (2g - 2) - 3 = 5;
       r = h^0(K_C - g_3^1) - 1 = {planes in P^4 via a line} = 2
 
 geometric meaning: 
-    |K_C - g_3^1 | = {divisors in K_C, containing 3 points on a line} - {the base locus} = g_5^2 -->
+    |K_C - g_3^1 | = {divisors in K_C, containing 3 points on a line} - {the base locus} = g_5^2  END.
 
 ---------------------------------------------------------------------- 
