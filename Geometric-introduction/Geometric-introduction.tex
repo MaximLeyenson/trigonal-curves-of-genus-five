@@ -1,0 +1,325 @@
+
+
+% --------------------------------------------------------------
+%      = Header =
+% --------------------------------------------------------------
+
+\documentclass{amsart} % AMS article style
+
+\usepackage{amsfonts} % for \mathbb, etc
+
+\usepackage{hyperref}     % for linking to web pages (hyperlinks)
+
+% --------------------------------------------------------------
+%      = Newcommands  =
+% --------------------------------------------------------------
+
+
+% ------------------------------------------
+% brackets
+% ------------------------------------------
+% angled brackets
+
+\newcommand{\<}{\langle }  
+\renewcommand{\>}{\rangle }  
+% Angle Brackets: Angle brackets in LaTeX are not the same as the
+% inequality symbols: the angle bracket characters are '〈' and '〉',
+% not '<' and '>'. You get the angle brackets using the following
+% commands in math mode: \langle and \rangle. 
+
+% https://web.science.mq.edu.au/~rdale/resources/writingnotes/latexstyle.html
+
+% remark. \> is already defined in LaTeX, but I never use it:
+% \> ( or \: ) inserts a .22em space in text mode, or \medmuskip
+% there's an equivalent \medspace
+
+
+% ------------------------------------------
+% letters
+% ------------------------------------------
+
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+\newcommand{\FF}{\mathbb{F}}  % finite field
+
+\newcommand{\Qbar}{\overline{\QQ}}     % Qbar -- algebraic closure of Q
+
+\newcommand{\HH}{\mathbb{H}}    % hypercohomology groups
+
+\newcommand{\OO}{\mathcal{O}} % Structure sheaf
+
+% rare
+
+\newcommand{\adelicA}{\mathbb{A}}  % actually, same as the affine space
+
+% ------------------------------------------
+% =  new arrows = 
+% ------------------------------------------
+
+% an arrow with something above it
+\newcommand{\arrow}[1]{\stackrel{#1}{\to}}  
+           % example: A \arrow{\alpha} B
+           % previously I called it 'strelka'; need to keep for compatibility
+%
+% equality sign '=', with something above it,
+\newcommand{\equal}[1]{\stackrel{#1}{=}}  
+           % example: a^2 + b^2 \equalEx{[1]}  c^2
+
+\newcommand{\equalEx}{\equal}
+
+\newcommand{\Isom}{\stackrel{\sim}{\to}}    % arrow -> with tilde
+                                            % above
+
+
+% in older texts I called it \isom, with small 'i'
+
+\newcommand{\IsomRl}{\stackrel{\sim}{\leftarrow}}       %  arrow <- with tilde
+\newcommand{\isom}{\simeq}                      
+
+\newcommand{\rationalMap}{\dashrightarrow}     % dashed arrow - ->
+
+\newcommand{\equalDef}{\stackrel{\rm def}{=}}       %  equal by definition
+
+% ``arrows``, logical: 
+
+\newcommand{\equivalent}{\Longleftrightarrow}  % ⟺
+\renewcommand{\equiv}{\equivalent}  % used to be number-theoretic ≡
+
+\newcommand{\shortEquiv}{\Leftrightarrow}  % shorter form
+
+                                               
+
+% -- binary operations, like A + B
+\newcommand{\intersect}{\cap}                       % intersection sign
+\newcommand{\intersection}{\cap}                    % intersection sign
+
+% ----------------------------------------------------------------------
+%     == structures with mathop ==
+% ----------------------------------------------------------------------
+
+% ---------- to redo these:
+
+% -- binary operations, like A + B
+
+\newcommand{\tensor}{\mathop{\otimes}}
+\newcommand{\directsum}{\mathop{\oplus}}         % direct-sum is not allowed
+\newcommand{\union}{\mathop{\cup}}
+\newcommand{\fibered}{\mathop{\times}\limits}  % fibered product 
+
+\newcommand{\disjointUnion}{\mathop{\sqcup}}
+
+% math operations, like \dim (which is built-in):  
+
+
+\newcommand{\codim}{\mathop{\rm codim}\nolimits}
+\newcommand{\rk}{\mathop{\rm rk}}
+\newcommand{\im}{\mathop{\rm Im}}    % \Im is something different in latex 
+\newcommand{\coker}{\mathop{\rm Coker}}
+
+% \newcommand{\tr}{\mathop{\rm tr}}
+
+
+\newcommand{\Tors}{\mathop{\rm Tors}}
+\newcommand{\Supp}{\mathop{\rm Supp}}
+
+\newcommand{\Ext}{\mathop{\rm Ext}\nolimits}
+\newcommand{\Hom}{\mathop{\rm Hom}\nolimits}
+\newcommand{\End}{\mathop{\rm End}\nolimits}
+
+\newcommand{\Spec}{\mathop{\rm Spec}}
+\providecommand{\Proj}{\mathop{\rm Proj}}
+
+       % projective space;
+       % also: projectivization of a vector bundle;
+\newcommand{\PP}{\mathop{\mathbb{P}}\nolimits}  
+\newcommand{\pp}{\PP}  
+
+       % affine space; originally in Latex it is Angstrom...
+\renewcommand{\AA}{\mathbb{A}}  
+
+\newcommand{\Bl}{\mathop{\rm Bl}\nolimits}  % blowup
+
+\newcommand{\Sing}{\mathop{\rm Sing \;}\nolimits}  % subscheme of singularities
+\newcommand{\sing}{\Sing}  
+
+%                  moduli spaces
+
+\newcommand{\Pic}{\mathop{\rm Pic}\nolimits} % Picard group or variety
+\newcommand{\pic}{\Pic}
+\newcommand{\Hilb}{\mathop{\rm Hilb}\nolimits}
+\newcommand{\hilb}{\Hilb}
+
+
+% div(f) for a function f
+% div_X(f) on X
+\renewcommand{\div}{\mathop{\mathrm{div}}\nolimits}
+
+\newcommand{\Sym}{\mathop{\rm Sym}\nolimits}   % Symmetric power
+\newcommand{\sym}{\mathop{\rm sym}\nolimits}    % same, small 's
+
+\newcommand{\FT}{\mathop{\mathrm{FT}}\nolimits} % Foirer transform
+
+\newcommand{\id}{ {\rm id} }  % identity map
+
+% equivalences
+\newcommand{\numEquiv}{ \mathop{\sim}\limits_{\rm num} } % numerically equivalent
+
+% symbols
+\newcommand{\integral}{\int}      
+\newcommand{\orthogonal}{^{\perp}}      % orthogonal complement 
+\newcommand{\ort}{\orthogonal}      
+\newcommand{\dual}{^{\vee}}
+\newcommand{\dbar}{\bar{\partial}}       % d bar operator
+\newcommand{\pmNew}{\raisebox{.2ex}{$\scriptstyle\pm$}}  % better plus-minus sign, from StackOverflow
+\newcommand{\pmCentered}{\pmNew}
+
+
+
+
+% complexes
+\newcommand{\cOmega}{\Omega^{\cdot}}        % (de Rham) complex Omega (with dot)
+                           % tried {}^{\cdot}, but then the dot is too small
+
+% sheaves
+\newcommand{\sheafHom}{\mathcal{H} \mathit{om}}   % sheaf Hom
+\newcommand{\sheafExt}{\mathcal{E} \mathit{xt}}   % sheaf Ext 
+\newcommand{\sheafH}{\mathcal{H}}                 % sheaf H
+
+
+%  -- foreign names (incl. French names)
+
+\newcommand{\Chech}{\v{C}ech}    
+% another web page suggests: \v{C}ech
+\newcommand{\ChechIndex}{_{\check{C}}}  
+
+\newcommand{\Neron}{N\'eron}
+\newcommand{\Bezout}{B\'ezout}
+
+% --------------------------------------------------------------
+% -- document --
+
+\begin{document}
+
+%  -- title --
+
+\title{Geometric introduction to trigonal curves of genus five}
+\author{Maxim Leyenson}
+\date{}   % empty date 
+
+\maketitle
+%  -- end of: title --
+
+%-------------------toc ---------------------
+% \tableofcontents
+%----------------------------------------
+
+
+% ----------------------------------------------------------------------
+% =  TeX file, body =
+% ----------------------------------------------------------------------
+
+
+1. Let $C$ be a non-hyperelliptic trigonal  curve of genus five (assume for a moment that it
+exists). Then it has a plane model $C'$ which is a quintic with a double point:
+
+Indeed, let $g_3^1 = |p + q + r|$, where the points p, q and r on $C$ are distinct.
+Then, by the geometric Riemann-Roch theorem, the points p, q and r 
+all belong to the same line $l$ in the canonical embedding of $C$. (When we vary the divisor
+$D = p + q + r$ in the linear system $g_3^1$, the linear span $\<D\>$ varies, too, forming a ruled surface
+in $P^4$ containing $C$. More on this in a moment; this surface is important.)
+  
+Now consider the linear system of hyperplanes $|H|$ in $\mathbb{P}^4$ and the linear subsystem
+$|H - l|$ of hyperplanes containing the line $l$. It cuts out a linear system  
+$|K_C - p - q - r| $ of dimension $4 - ( \dim l + 1) = 2$ and degree 8 - 3 = 5 on $C$:
+
+\[
+    K_C - g_3^1 = g_5^2
+\]
+This $g_5^2$ gives a plane model $C'$ of the curve $C$ which is a curve of degree 5;
+of course, this is just a projection of $C$ with the center l.
+
+Since $p_a(C') = 4 \cdot 3 / 2 = 6$, we have $ \delta(C') = p_a(C') - p_g(C') = 
+6 - 5 = 1$, and thus $C'$ is a singular curve with just one singularity, which is either a node or one cusp.
+(See Serre, "Algebraic groups and class fields" for an excellent introduction to the $\delta$ - invariant of
+singular curves.)
+
+% ---------------------------------------------------------------------
+
+\vspace{10mm} %10 mm vertical space
+
+2. We can now prove the existence of such a curve $C$. Consider a plane curve $C'$
+of degree 5 with one node $p$. (We omit the case of a cusp.) It is clear that such a curve exists.
+
+The geometric genus of $C'$ is $4 \cdot 3 / 2 - 1 = 5$. Let $C$ be the smooth model of $C'$.
+It can be constructed by blowing up the point $p$ on $\mathbb{P}^2$, $\Bl_p(P^2)$, and taking the proper
+pre-image of $C'$.
+
+It is immediately clear that $C$ is trigonal: the linear system of lines
+on the plane through $p$, $|l - p|$, gives a pencil of (effective) divisors
+of degree 3 on $C$.
+
+% ---------------------------------------------------------------------- 
+\vspace{10mm} %10 mm vertical space
+3. The linears system of conics through $p$ on the plane, $|2 l - p|$,
+cuts out a linear system of degree 10 on $C'$. The base locus of this linear 
+system is $2p$. By the adjunction formula for nodal curves, (cf. 
+Enrico Arbarello, Maurizio Cornalba, Phillip Griffiths, Joseph Harris,
+Geometry of Algebraic Curves: Volume I, Appendix A), after removing the base point $2p$, 
+we get the {\it canonical } linear system on $C$. (For any plane nodal curve $C'$,
+the canonical class of its smooth model is $ (d-3) l - \{ $ 0-cycle of nodes on  $C' \} $.)
+
+Note that the linear system $|2l - p|$ embeds $\Bl_p(P^2)$ as a ruled surface in $P^4$.
+
+This gives an embedding
+
+\[
+   i(C) \; \subset i(\Bl(P^2)) \; \subset P^4 = |K_C|^*
+\]
+
+where $i$ is givenby the linear system $|2l - p|$.
+
+4. note that any line $l_0$ on $P^2$ via p becomes a line $L_0$ under the embedding
+$i()$. (It follows, or example, from the computation $C \cdot l_0 = p + p'$ for
+any conic $C$ in $|2l - p|$.
+
+It follows that the image $ S = \Bl(P^2) $ in $P^4$  is a ruled surface, with every line 
+of the ruling giving a trisecan to the $ i(C) $. Thus, $ S $ is the spanned by the trisecant lines
+to $ C $.
+
+% ---------------------------------------------------------------------- 
+
+\vspace{10mm} %10 mm vertical space
+5. It is easy to see that $ S = \Bl(P^2) $ is the intersection of quadrocs through $ S $ (and even
+through $ C $, as we will see in a moment):
+
+Note that $ i(C) $ is not an intersection of quadrics: for a trisecant line $ L $,
+$ L$ intersects any quadric  $ Q $ through $C$ at three points, $  i(p1),.., i(p3) $ ,
+and this is contained in $ Q $ . Thus, $ S $ is the intersection of quadrics through
+$ C $ .
+
+
+\vspace{10mm} %10 mm vertical space
+% ---------------------------------------------------------------------- 
+
+6. In fact, $ S $ is clearlt the same for all the crves $C'$ with node
+at $ p $  . A computation with Riemann-Roch theorem gives that every $C$ is cut ut in $ S $ 
+by its own pencil of cubic hypersurfaces in $\mathbb{P}^4$. The attached program computes this pencil.
+
+
+\vspace{10mm} %10 mm vertical space
+% ---------------------------------------------------------------------- 
+Author: Maxim Leyenson, email address: $\<$ my last name $ \> $ at gmail dot com 
+
+
+\vspace{10mm} %10 mm vertical space
+% ---------------------------------------------------------------------- 
+
+ % [Go back to README](README.md)
+ % \href{run:../README.md}{back to README}
+ \href{../README.md}{back to README}
+
+\end{document}
+

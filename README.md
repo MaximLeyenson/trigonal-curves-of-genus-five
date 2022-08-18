@@ -8,7 +8,8 @@ Projective algebraic geometry
 **Geometric introduction**
 
 For a Geometric introduction to genus five trigonal curves, please see
-[Geometric introduction](Geometric-introduction.md)
+[Geometric introduction, markdown version](Geometric-introduction.md) or the
+[Geometric introduction, html version](Geometric-introduction/Geometric-introduction.via-pandoc.html).
 
 (Also, the Macaulay 2 code is really commented and explained).
 
