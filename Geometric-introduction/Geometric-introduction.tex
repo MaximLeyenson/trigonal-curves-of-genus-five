@@ -62,7 +62,6 @@
 % an arrow with something above it
 \newcommand{\arrow}[1]{\stackrel{#1}{\to}}  
            % example: A \arrow{\alpha} B
-           % previously I called it 'strelka'; need to keep for compatibility
 %
 % equality sign '=', with something above it,
 \newcommand{\equal}[1]{\stackrel{#1}{=}}  
@@ -160,7 +159,7 @@
 \newcommand{\Sym}{\mathop{\rm Sym}\nolimits}   % Symmetric power
 \newcommand{\sym}{\mathop{\rm sym}\nolimits}    % same, small 's
 
-\newcommand{\FT}{\mathop{\mathrm{FT}}\nolimits} % Foirer transform
+\newcommand{\FT}{\mathop{\mathrm{FT}}\nolimits} % Fourier transform
 
 \newcommand{\id}{ {\rm id} }  % identity map
 
@@ -173,7 +172,7 @@
 \newcommand{\ort}{\orthogonal}      
 \newcommand{\dual}{^{\vee}}
 \newcommand{\dbar}{\bar{\partial}}       % d bar operator
-\newcommand{\pmNew}{\raisebox{.2ex}{$\scriptstyle\pm$}}  % better plus-minus sign, from StackOverflow
+\newcommand{\pmNew}{\raisebox{.2ex}{$\scriptstyle\pm$}}  % better plus-minus sign, from Stack Overflow
 \newcommand{\pmCentered}{\pmNew}
 
 
@@ -221,49 +220,72 @@
 % =  TeX file, body =
 % ----------------------------------------------------------------------
 
+\section{}%
+\label{sec:section name}
 
-1. Let $C$ be a non-hyperelliptic trigonal  curve of genus five (assume for a moment that it
-exists). Then it has a plane model $C'$ which is a quintic with a double point:
+%1.
+Let $C$ be a non-hyperelliptic trigonal curve of genus five (assume for a moment that it
+exists; we will construct one in a few moments). Then it has a plane
+model $C'$ which is a quintic with a double point:
 
-Indeed, let $g_3^1 = |p + q + r|$, where the points p, q and r on $C$ are distinct.
-Then, by the geometric Riemann-Roch theorem, the points p, q and r 
-all belong to the same line $l$ in the canonical embedding of $C$. (When we vary the divisor
-$D = p + q + r$ in the linear system $g_3^1$, the linear span $\<D\>$ varies, too, forming a ruled surface
-in $P^4$ containing $C$. More on this in a moment; this surface is important.)
+Indeed, we can write the trigonal structure as $g_3^1 = |p + q + r|$, where the points p, q and r on $C$ are distinct.
+(In other words, a trigonal structure is a map \[
+  \pi: C \to \PP^1,
+\], and for some point $a \in \PP^1$ the preimage of the point $a$
+consists of three separate points, $\pi^{-1}(a) = p + q + r$.)
+
+Then, by the geometric version of the Riemann-Roch theorem, the points p, q and r 
+all belong to the same line $l$ in the canonical embedding of $C$. 
+
+When we vary (move) the divisor $D = p + q + r$ in the linear system
+$g_3^1$, the linear span $\<D\>$, which is a line,  is changing, too; forming a ruled surface
+in $\PP^4$ containing the curve $C$. More on this later; this surface
+containing $C$ is important.
   
-Now consider the linear system of hyperplanes $|H|$ in $\mathbb{P}^4$ and the linear subsystem
-$|H - l|$ of hyperplanes containing the line $l$. It cuts out a linear system  
+Now consider the linear system of hyperplanes $|H|$ in $\PP^4$ and the linear subsystem
+$|H - l|$ of hyperplanes containing the fixed line $l$ for some
+divisor $D = p + q + r $ in the linear system $g_3^1$. This linear
+system of hyperplanes cuts out a linear system  
 $|K_C - p - q - r| $ of dimension $4 - ( \dim l + 1) = 2$ and degree 8 - 3 = 5 on $C$:
 
 \[
     K_C - g_3^1 = g_5^2
 \]
 This $g_5^2$ gives a plane model $C'$ of the curve $C$ which is a curve of degree 5;
-of course, this is just a projection of $C$ with the center l.
+by construction, it is just the projection of the curve $C$ with the center $l$.
 
 Since $p_a(C') = 4 \cdot 3 / 2 = 6$, we have $ \delta(C') = p_a(C') - p_g(C') = 
-6 - 5 = 1$, and thus $C'$ is a singular curve with just one singularity, which is either a node or one cusp.
+6 - 5 = 1$, and thus $C'$ is a singular curve with one singular point,
+which can be either a node or one cusp.
 (See Serre, "Algebraic groups and class fields" for an excellent introduction to the $\delta$ - invariant of
 singular curves.)
 
 % ---------------------------------------------------------------------
 
-\vspace{10mm} %10 mm vertical space
+\section{}%
+\label{sec:}
 
-2. We can now prove the existence of such a curve $C$. Consider a plane curve $C'$
+% 2. 
+
+We can now prove the existence of such a curve $C$. Consider a plane curve $C'$
 of degree 5 with one node $p$. (We omit the case of a cusp.) It is clear that such a curve exists.
 
 The geometric genus of $C'$ is $4 \cdot 3 / 2 - 1 = 5$. Let $C$ be the smooth model of $C'$.
-It can be constructed by blowing up the point $p$ on $\mathbb{P}^2$, $\Bl_p(P^2)$, and taking the proper
-pre-image of $C'$.
+It can be constructed by blowing up the point $p$ on $\PP^2$, 
+% $\Bl_p(\PP^2)$, 
+and taking the proper preimage of the singular curve $C'$.
 
-It is immediately clear that $C$ is trigonal: the linear system of lines
-on the plane through $p$, $|l - p|$, gives a pencil of (effective) divisors
-of degree 3 on $C$.
+It is immediately clear that the curve $C$ is trigonal: the linear system of lines
+on the plane through the point $p$, $|l - p|$, gives a pencil of (effective) divisors
+of degree 3 on $C$ (and gives a projection of $C$ to a projective line
+which is a degree 3 map).
 
 % ---------------------------------------------------------------------- 
-\vspace{10mm} %10 mm vertical space
-3. The linears system of conics through $p$ on the plane, $|2 l - p|$,
+\section{}%
+\label{sec:}
+
+% 3. 
+The linear system of conics through $p$ on the plane, $|2 l - p|$,
 cuts out a linear system of degree 10 on $C'$. The base locus of this linear 
 system is $2p$. By the adjunction formula for nodal curves, (cf. 
 Enrico Arbarello, Maurizio Cornalba, Phillip Griffiths, Joseph Harris,
@@ -271,28 +293,32 @@ Geometry of Algebraic Curves: Volume I, Appendix A), after removing the base poi
 we get the {\it canonical } linear system on $C$. (For any plane nodal curve $C'$,
 the canonical class of its smooth model is $ (d-3) l - \{ $ 0-cycle of nodes on  $C' \} $.)
 
-Note that the linear system $|2l - p|$ embeds $\Bl_p(P^2)$ as a ruled surface in $P^4$.
+Note that the linear system $|2l - p|$ embeds the blown-up plane $\Bl_p(\PP^2)$ as a ruled surface in $\PP^4$.
 
 This gives an embedding
 
 \[
-   i(C) \; \subset i(\Bl(P^2)) \; \subset P^4 = |K_C|^*
+   i(C) \; \subset i(\Bl(\PP^2)) \; \subset \PP^4 = |K_C|^*
 \]
 
-where $i$ is givenby the linear system $|2l - p|$.
+% where $i$ is 
+given by the linear system $|2l - p|$.
 
-4. note that any line $l_0$ on $P^2$ via p becomes a line $L_0$ under the embedding
-$i()$. (It follows, or example, from the computation $C \cdot l_0 = p + p'$ for
+Note that any line $l_0$ on $\PP^2$ via p becomes a line $L_0$ under the embedding
+$i$. (It follows, or example, from the computation $C \cdot l_0 = p + p'$ for
 any conic $C$ in $|2l - p|$.
 
-It follows that the image $ S = \Bl(P^2) $ in $P^4$  is a ruled surface, with every line 
-of the ruling giving a trisecan to the $ i(C) $. Thus, $ S $ is the spanned by the trisecant lines
+It follows that the image $ S = \Bl(\PP^2) $ in $\PP^4$  is a ruled surface, with every line 
+of the ruling giving a trisecant to the $ i(C) $. Thus, $ S $ is the spanned by the trisecant lines
 to $ C $.
 
 % ---------------------------------------------------------------------- 
 
-\vspace{10mm} %10 mm vertical space
-5. It is easy to see that $ S = \Bl(P^2) $ is the intersection of quadrocs through $ S $ (and even
+%5. 
+\section{}%
+\label{sec:section name}
+
+It is easy to see that $ S = \Bl(\PP^2) $ is the intersection of quadrics through $ S $ (and even
 through $ C $, as we will see in a moment):
 
 Note that $ i(C) $ is not an intersection of quadrics: for a trisecant line $ L $,
@@ -300,13 +326,18 @@ $ L$ intersects any quadric  $ Q $ through $C$ at three points, $  i(p1),.., i(p
 and this is contained in $ Q $ . Thus, $ S $ is the intersection of quadrics through
 $ C $ .
 
+\section{}%
+\label{sec:}
 
-\vspace{10mm} %10 mm vertical space
+
 % ---------------------------------------------------------------------- 
 
-6. In fact, $ S $ is clearlt the same for all the crves $C'$ with node
-at $ p $  . A computation with Riemann-Roch theorem gives that every $C$ is cut ut in $ S $ 
-by its own pencil of cubic hypersurfaces in $\mathbb{P}^4$. The attached program computes this pencil.
+%6. 
+
+In fact, the surface $S$ is clearly one and the same for all the
+curves $C'$ with a node
+at the same point $p$  . A computation with Riemann-Roch theorem gives that every $C$ is cut out in $ S $ 
+by its own pencil of cubic hypersurfaces in $\PP^4$. The attached program computes this pencil.
 
 
 \vspace{10mm} %10 mm vertical space
@@ -316,10 +347,6 @@ Author: Maxim Leyenson, email address: $\<$ my last name $ \> $ at gmail dot com
 
 \vspace{10mm} %10 mm vertical space
 % ---------------------------------------------------------------------- 
-
- % [Go back to README](README.md)
- % \href{run:../README.md}{back to README}
- \href{../README.md}{back to README}
 
 \end{document}
 
